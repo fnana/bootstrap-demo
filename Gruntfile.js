@@ -23,16 +23,16 @@ module.exports = function(grunt) {
         }]
       }
     },
-    sass: {
+    less: {
       build: {
         options: {
           compress: false
         },
         files: [{
-          '<%= meta.build %>css/libs.css': '<%= meta.assets %>css/libs.scss',
-          '<%= meta.build %>css/style.css': '<%= meta.assets %>css/style.scss',
-          '<%= meta.build %>css/ie.css': '<%= meta.assets %>css/ie.scss',
-          '<%= meta.build %>css/print.css': '<%= meta.assets %>css/print.scss'
+          '<%= meta.build %>css/libs.css': '<%= meta.assets %>css/libs.less',
+          '<%= meta.build %>css/style.css': '<%= meta.assets %>css/style.less',
+          '<%= meta.build %>css/ie.css': '<%= meta.assets %>css/ie.less',
+          '<%= meta.build %>css/print.css': '<%= meta.assets %>css/print.less'
         }]
       }
     },
@@ -132,9 +132,9 @@ module.exports = function(grunt) {
         files: ['<%= meta.views %>data/**'],
         tasks: ['copy:data']
       },
-      sass: {
-        files: ['<%= meta.assets %>css/**/*.scss'],
-        tasks: ['sass', 'autoprefixer', 'csslint']
+      less: {
+        files: ['<%= meta.assets %>css/**/*.less'],
+        tasks: ['less', 'autoprefixer', 'csslint']
       },
       fonts: {
         files: ['<%= meta.assets %>fonts/**'],
@@ -277,7 +277,7 @@ module.exports = function(grunt) {
   });
   grunt.file.expand('./node_modules/grunt-*/tasks').forEach(grunt.loadTasks);
   require('time-grunt')(grunt);
-  grunt.registerTask('build', ['clean', 'concat', 'sass', 'jade', 'copy', 'autoprefixer', 'htmlhint', 'jshint', 'csslint']);
+  grunt.registerTask('build', ['clean', 'concat', 'less', 'jade', 'copy', 'autoprefixer', 'htmlhint', 'jshint', 'csslint']);
   grunt.registerTask('default', ['build', 'concurrent:dev']);
   grunt.registerTask('test', ['connect:server', 'qunit']);
   grunt.registerTask('doc', ['markdownpdf']);
