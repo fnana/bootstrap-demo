@@ -1,3 +1,7 @@
 http://wrapbootstrap.com/preview/WB0089341
 https://teamtreehouse.com/forum/best-practices-to-customise-bootstrap-3-vanilla-css
 https://bootstrapasap.com/help/theme-guidelines-and-best-practices/
+
+
+https://fezvrasta.github.io/bootstrap-material-design/bootstrap-elements.html
+http://html2jade.org/
