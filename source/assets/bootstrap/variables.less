@@ -365,17 +365,17 @@
 @navbar-collapse-max-height:       340px;
 
 @navbar-default-color:             #777;
-@navbar-default-bg:                #f8f8f8;
+@navbar-default-bg:                @brand-primary;
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 
 // Navbar links
-@navbar-default-link-color:                #777;
-@navbar-default-link-hover-color:          #333;
-@navbar-default-link-hover-bg:             transparent;
-@navbar-default-link-active-color:         #555;
-@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
-@navbar-default-link-disabled-color:       #ccc;
-@navbar-default-link-disabled-bg:          transparent;
+@navbar-default-link-color:                #fff;
+@navbar-default-link-hover-color:          @navbar-default-link-color;
+@navbar-default-link-hover-bg:             darken(@navbar-default-bg, 10%);
+@navbar-default-link-active-color:         @navbar-default-link-color;
+@navbar-default-link-active-bg:            @navbar-default-link-hover-bg;
+@navbar-default-link-disabled-color:       @navbar-default-link-color;
+@navbar-default-link-disabled-bg:          darken(@navbar-default-bg, 50%);
 
 // Navbar brand label
 @navbar-default-brand-color:               @navbar-default-link-color;

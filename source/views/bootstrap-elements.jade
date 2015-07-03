@@ -18,6 +18,19 @@ block container
             a(href='#') Google Material Design
             | &nbsp;in your favorite front-end framework.
           p
-            | If you like this project you can support me by donating something on Gittip, starring this repository, or
+            | If you like this project you can support me by donating something on Gittip, starring this repository, or&nbsp;
             a(href='https://github.com/FezVrasta/bootstrap-material-design/issues') reporting bugs and ideas
             | .
+  .container
+    .row.page-header
+      .col-sm-12
+        h1.text-uppercase Navbar
+        .navbar.navbar-default
+          .navbar-header
+            a.navbar-brand(href="#") Brand
+          .navbar-collapse.collapse.navbar-responsive-collapse
+            ul.nav.navbar-nav
+              li.active: a(href="#") Active
+              li: a(href="#") Link
+              li.disabled: a(href="#") Disabled
+              li.dropdown: a(href="#") Dropdown
