@@ -42,6 +42,7 @@ module.exports = function(grunt) {
           '<%= meta.build %>js/modernizr.js': ['<%= meta.assets %>js/libs/modernizr.2.8.3.js','<%= meta.assets %>js/libs/detectizr.js'],
           '<%= meta.build %>js/libs.js': ['<%= meta.assets %>js/libs/jquery-2.1.3.js', '<%= meta.assets %>js/libs/plugins/*.js'],
           '<%= meta.build %>js/l10n.js': '<%= meta.assets %>js/l10n.js',
+          '<%= meta.build %>js/bootstrap.min.js': '<%= meta.assets %>js/bootstrap.min.js',
           '<%= meta.build %>js/script.js': ['<%= meta.assets %>js/site.js', '<%= meta.assets %>js/plugins/*.js']
         }]
       }
@@ -208,6 +209,7 @@ module.exports = function(grunt) {
           '<%= meta.build %>js/modernizr.js': ['<%= meta.assets %>js/libs/modernizr.2.8.3.js','<%= meta.assets %>js/libs/detectizr.js'],
           '<%= meta.build %>js/libs.js': ['<%= meta.assets %>js/libs/jquery-2.1.3.js', '<%= meta.assets %>js/libs/plugins/*.js'],
           '<%= meta.build %>js/l10n.js': '<%= meta.assets %>js/l10n.js',
+          '<%= meta.build %>js/bootstrap.min.js': '<%= meta.assets %>js/bootstrap.min.js',
           '<%= meta.build %>js/script.js': ['<%= meta.assets %>js/site.js', '<%= meta.assets %>js/plugins/*.js']
         }]
       }

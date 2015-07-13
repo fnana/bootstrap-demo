@@ -1,10 +1,31 @@
-nav.navbar.navbar-inverse
+header.header-wrapper
   .container
     .navbar-header
-      +link('Logo', 'index.html').logo
-        +img('Day lite', 'images/logo.png')
-    ul.social-header
-      li
-        +link('Social', '#')
-          +img('Social', 'images/social-icon.png')
-    +nav([{title: 'Home'}, {title: 'Pages'}, {title: 'Journal'}, {title: 'Feature'}, {title: 'Contact'}]).nav.navbar-nav.navbar-right
+      a.navbar-brand(href="#")
+        img(alt="Modus Versus", src="images/logo.png")
+    ul.nav.nav-pills.modus-nav
+      li: a(href="javascript;") Home
+      li: a(href="javascript;") About
+      li: a(href="javascript;") Services
+      li.dropdown
+        a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+          em.glyphicon.glyphicon-menu-down
+          | Dropdown
+        ul.dropdown-menu
+          li: a(href="javascript;") Porfolio 2 columns page
+          li: a(href="javascript;") Porfolio 2 columns page
+          li: a(href="javascript;") Porfolio 2 columns page
+          li.divider(role='separator')
+          li: a(href="javascript;") Porfolio 2 columns page
+          li: a(href="javascript;") Porfolio 2 columns page
+      li: a(href="javascript;") Blog
+      li: a(href="javascript;") Features
+      li: a(href="javascript;") Contacts
+      li.dropdown
+        a.dropdown-toggle.search-button(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+          em.glyphicon.glyphicon-search
+        ul.dropdown-menu
+          .navbar-form
+            .form-group
+              input.form-control(type='text', placeholder='Search')
+            button.btn.btn-default(type='submit') Search

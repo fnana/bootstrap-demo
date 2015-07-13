@@ -1,6 +1,37 @@
-// Block
-.block-1 {}
-.social-header {
+// Main Menu
+.modus-nav {
   float: right;
-  margin: 10px 15px 0;
+  > li {
+    > a {
+      text-transform: uppercase;
+      color: @navbar-default-link-color;
+      border-bottom: 2px solid transparent;
+      .border-radius(5px);
+      .glyphicon-menu-down {
+        .font-size(9px);
+        margin-right: 3px;
+      }
+    }
+    > a:hover,
+    &.dropdown.open > a,
+    &.active > a {
+      border-bottom-color: darken(@nav-link-hover-bg, 15%);
+      font-weight: 600;
+    }
+  }
+  .search-button {
+    background: none;
+    color: @btn-primary-color;
+    border-bottom: 2px solid transparent;
+    &:hover {
+      background: @nav-link-hover-bg;
+      border-bottom-color: darken(@nav-link-hover-bg, 15%);
+    }
+  }
+}
+
+
+// banner slider
+.carousel-inner > .item > img {
+  width: 100%;
 }

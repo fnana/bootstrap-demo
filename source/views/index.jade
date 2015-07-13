@@ -6,58 +6,27 @@ block vars
   -menuIndex = 0
 
 block container
-  .container
-    .row
-      .col-sm-12
-        h3 Nulla vitae elit libero, a pharetra augue curabitur blandit tempus porttitor.
-        p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus.
-        ul
-          li: +link('Purchase Now').btn.btn-primary
-          li: +link('See Pricing').btn.btn-primary
-  .container
-    .row
-      .col-sm-12
-        h3 What is Our Process
-        p Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-    .row
-      .col-sm-3.text-center
-        h3 What is Our Process
-        p Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-      .col-sm-3.text-center
-        h3 What is Our Process
-        p Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-      .col-sm-3.text-center
-        h3 What is Our Process
-        p Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-      .col-sm-3.text-center
-        h3 What is Our Process
-        p Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-    .row
-      .col-sm-12
-        h3 What is Our Process
-        p Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-    .row
-      .col-sm-3.text-center
-        h3 What is Our Process
-        p Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-      .col-sm-3.text-center
-        h3 What is Our Process
-        p Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-      .col-sm-3.text-center
-        h3 What is Our Process
-        p Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-      .col-sm-3.text-center
-        h3 What is Our Process
-        p Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-    .row
-      .col-sm-6
-        h3 Recent Posts
-        p Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-      .col-sm-6
-        h3 A Little About Us
-        p Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-  .container
-    .row
-      .col-sm-12.text-center
-        p Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.
+  #myCarousel.carousel.slide(data-ride='carousel')
+    // Indicators
+    ol.carousel-indicators
+      li.active(data-target='#myCarousel', data-slide-to='0')
+      li(data-target='#myCarousel', data-slide-to='1')
+      li(data-target='#myCarousel', data-slide-to='2')
+      li(data-target='#myCarousel', data-slide-to='3')
+    // Wrapper for slides
+    .carousel-inner(role='listbox')
+      .item.active
+        img(src='images/slider-image-1.jpg', alt='Chania')
+      .item
+        img(src='images/slider-image-2.jpg', alt='Chania')
+      .item
+        img(src='images/slider-image-3.jpg', alt='Flower')
+      .item
+        img(src='images/slider-image-4.jpg', alt='Flower')
+    // Left and right controls
+    a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+      span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+      span.sr-only Previous
+    a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+      span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+      span.sr-only Next
