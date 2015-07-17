@@ -21,11 +21,12 @@ header.header-wrapper
       li: a(href="javascript;") Blog
       li: a(href="javascript;") Features
       li: a(href="javascript;") Contacts
-      li.dropdown
+      li.dropdown.search-form
         a.dropdown-toggle.search-button(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
           em.glyphicon.glyphicon-search
-        ul.dropdown-menu
+        ul.dropdown-menu.dropdown-menu-right
           .navbar-form
-            .form-group
+            .input-group
               input.form-control(type='text', placeholder='Search')
-            button.btn.btn-default(type='submit') Search
+              .input-group-btn
+                button.btn.btn-info(type='submit') Search

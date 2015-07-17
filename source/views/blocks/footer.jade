@@ -3,10 +3,54 @@ footer
     .container
       .row
         .col-sm-4
-          a(href="#"): img(alt="Modus Versus", src="images/logo.png")
-          p
+          ul.list-unstyled
+            li: a(href="#"): img(alt="Modus Versus", src="images/logo.png")
+            li Mauris congue sit amet mi eu aliquam. Cras id dapibus ante, nec cursus risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus laoreet nisi at lectus lacinia, quis hendrerit leo cursus. Morbi sodales tincidunt metus, non interdum arcu rhoncus id.
+            li
+              | Phone:&nbsp;
+              a(href="tel:+18225695896"): strong 182 2569 5896
+            li
+              | Email:&nbsp;
+              a(href="mailto:info@modu.versus"): strong info@modu.versus
         .col-sm-2
+          h3 Company
+          ul.list-unstyled
+            - var companyList = ['About', 'FAQ', 'Contact', 'Terms', 'Privacy', 'Testimonials']
+            - for (var i = 0; i < companyList.length; i++)
+              li
+                em.glyphicon.glyphicon-menu-right
+                a(href="#")!=companyList[i]
         .col-sm-2
+          h3 Community
+          ul.list-unstyled
+            - var companyList = ['Blog', 'Forum', 'Support', 'Newsletter']
+            - for (var i = 0; i < companyList.length; i++)
+              li
+                em.glyphicon.glyphicon-menu-right
+                a(href="#")!=companyList[i]
         .col-sm-4
+          h3
+            em from the&nbsp;
+            strong.text-uppercase blog
+          ul.list-unstyled.blog-list
+            li
+              a.blog-list-thumbnail(href="#"): img(src="http://placehold.it/70x70.png", alt='Modus Versus')
+              .blog-list-content
+                p Aliquam tellus libero, cursus eget diam id, porttitor imperdiet magna. Nullam quis magna dapibus, ornare nibh.
+                a(href="#")
+            li
+              a.blog-list-thumbnail(href="#"): img(src="http://placehold.it/70x70.png", alt='Modus Versus')
+              .blog-list-content
+                p Fusce sit amet consectetur dolor, sed efficitur orci in luctus vitae.
+                a(href="#")
   .footer-bottom
     .container
+      .row
+        .col-sm-6
+          p 2013 Modus Versus
+        .col-sm-6
+          ul.list-unstyled.social-list.pull-right
+            li: em.glyphicon.glyphicon-th-large
+            li: em.glyphicon.glyphicon-th-large
+            li: em.glyphicon.glyphicon-th-large
+            li: em.glyphicon.glyphicon-th-large

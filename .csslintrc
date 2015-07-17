@@ -1,10 +1,10 @@
 {
   "important": true,
-  "adjoining-classes": true,
+  "adjoining-classes": false,
   "known-properties": true,
   "box-sizing": true,
   "box-model": true,
-  "overqualified-elements": true,
+  "overqualified-elements": false,
   "display-property-grouping": true,
   "bulletproof-font-face": true,
   "compatible-vendor-prefixes": true,

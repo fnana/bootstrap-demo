@@ -16,13 +16,13 @@ block container
     // Wrapper for slides
     .carousel-inner(role='listbox')
       .item.active
-        img(src='images/slider-image-1.jpg', alt='Chania')
+        img(src='images/slider-image-1.jpg', alt='Modus Versus')
       .item
-        img(src='images/slider-image-2.jpg', alt='Chania')
+        img(src='images/slider-image-2.jpg', alt='Modus Versus')
       .item
-        img(src='images/slider-image-3.jpg', alt='Flower')
+        img(src='images/slider-image-3.jpg', alt='Modus Versus')
       .item
-        img(src='images/slider-image-4.jpg', alt='Flower')
+        img(src='images/slider-image-4.jpg', alt='Modus Versus')
     // Left and right controls
     a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
       span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
@@ -31,45 +31,45 @@ block container
       span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
       span.sr-only Next
   .container
-    .row.panel.services-panel
-      .col-sm-8
+    .services-panel.clearfix
+      .services-panel-left
         h3 Some of our top services
         p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet purus id nisl rutrum laoreet. Maecenas nec arcu libero. Quisque eu justo orci.
-      .col-sm-4
+      .services-panel-right
         button.btn.btn-lg.btn-danger.pull-right.text-uppercase View more
-  .container
-    .row.services-panel
-      .col-sm-3.text-center
+  .container.info-panel
+    .row
+      .col-sm-3.text-center.custom-item
         .well.well-lg
           em.glyphicon.glyphicon-thumbs-up
-          h5.text-uppercase Some of our top services
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet purus id nisl rutrum laoreet. Maecenas nec arcu libero. Quisque eu justo orci.
+          h5.text-uppercase.info-item-title Some of our top services
+          p Lorem ipsum dolor sit amet, conscing elit. Vivamus aliquet purus id nisl rutrum laoreet. Maecenas nec arcu libero
         button.btn.btn-lg.btn-danger.text-uppercase read more
-      .col-sm-3.text-center
+      .col-sm-3.text-center.info-item
         .well.well-lg
           em.glyphicon.glyphicon-thumbs-up
-          h5.text-uppercase Some of our top services
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet purus id nisl rutrum laoreet. Maecenas nec arcu libero. Quisque eu justo orci.
+          h5.text-uppercase.info-item-title Some of our top services
+          p Lorem ipsum dolor sit amet, conseadipiscing elit. Vivamus aliquet purus id nisl rutrum laoreet. Maecenas nec arcu libero
         button.btn.btn-lg.btn-success.text-uppercase read more
-      .col-sm-3.text-center
+      .col-sm-3.text-center.info-item
         .well.well-lg
           em.glyphicon.glyphicon-thumbs-up
-          h5.text-uppercase Some of our top services
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet purus id nisl rutrum laoreet. Maecenas nec arcu libero. Quisque eu justo orci.
+          h5.text-uppercase.info-item-title Some of our top services
+          p Lorem ipsum dolor sit amet, consectetur adipt. Vivamus aliquet purus id nisl rutrum laoreet. Maecenas nec arcu libero.
         button.btn.btn-lg.btn-success.text-uppercase read more
-      .col-sm-3.text-center
+      .col-sm-3.text-center.info-item
         .well.well-lg
           em.glyphicon.glyphicon-filter
-          h5.text-uppercase Some of our top services
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet purus id nisl rutrum laoreet. Maecenas nec arcu libero. Quisque eu justo orci.
+          h5.text-uppercase.info-item-title Some of our top services
+          p Lorem ipsum dolor sit amet, consectetur adipi. Vivamus aliquet purus id nisl rutrum laoreet. Maecenas nec arcu libero
         button.btn.btn-lg.btn-success.text-uppercase read more
+  .details-panel-top
+    .container.text-center
+      h1.text-uppercase.text-danger Why modus versus
+      p Sed in tristique diam. Vivamus tempor pellentesque elit, ac convallis lacus aliquet sed. Curabitur lacus erat, tempor id tortor sit amet, facilisis tristique felis.
+      img(src='http://placehold.it/1170x300.png', alt='Modus Versus')
   br
-  .container.details-panel-top.text-center
-    h2.text-uppercase Why modus versus
-    p Sed in tristique diam. Vivamus tempor pellentesque elit, ac convallis lacus aliquet sed. Curabitur lacus erat, tempor id tortor sit amet, facilisis tristique felis.
-    img(src='http://placehold.it/1170x300.png')
-  br
-  .container.details-panel-top
+  .container.details-panel-bottom
     .row.details-panel-content
       .col-sm-3
         h5 Why Choose Us
@@ -80,21 +80,21 @@ block container
               em.glyphicon.glyphicon-arrow-right
               span!=list1[i]
       .col-sm-6
-        p.well Curabitur lacus erat, tempor id tortor sit amet, facilisis tristique felis
+        p Curabitur lacus erat, tempor id tortor sit amet, facilisis tristique felis&nbsp;
           a(href="#") rutrum non lorem
-          | fringilla ex finibus magna rutrum auctor.
+          | &nbsp;fringilla ex finibus magna rutrum auctor.
         .row.text-center
           .col-sm-3
-            img(src="http://placehold.it/100x50.png")
+            img(src="http://placehold.it/100x50.png", alt='Modus Versus')
             h5 Quisque
           .col-sm-3
-            img(src="http://placehold.it/100x50.png")
+            img(src="http://placehold.it/100x50.png", alt='Modus Versus')
             h5 Eleifend
           .col-sm-3
-            img(src="http://placehold.it/100x50.png")
+            img(src="http://placehold.it/100x50.png", alt='Modus Versus')
             h5 Consectetur
           .col-sm-3
-            img(src="http://placehold.it/100x50.png")
+            img(src="http://placehold.it/100x50.png", alt='Modus Versus')
             h5 Facilisis
       .col-sm-3
         h5 What Client's Say
